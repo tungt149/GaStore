@@ -1,11 +1,6 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Free Adidas Website Template | Home :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -69,10 +64,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    </div>
 	    <div class="cssmenu">
 		   <ul>
-			 <li class="active"><a href="register.html">Sign up & Save</a></li> 
-			 <li><a href="shop.html">Store Locator</a></li> 
-			 <li><a href="login.html">My Account</a></li> 
-			 <li><a href="checkout.html">CheckOut</a></li> 
+			 <li class="active"><a href="@{/register}">Sign up & Save</a></li> 
+			 <li><a th:href="@{/shop}">Store Locator</a></li> 
+			 <li><a th:href="@{/login}">My Account</a></li> 
+			 <li><a th:href="@{/checkout}">CheckOut</a></li> 
 		   </ul>
 		</div>
 		<ul class="icon2 sub-icon2 profile_img">
@@ -98,23 +93,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>popular</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">login</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">login</a></li>
 								</ul>	
 							</div>
 							<div class="h_nav">
 								<h4 class="top">men</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						</div>
@@ -122,11 +117,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>style zone</h4>
 								<ul>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">brands</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -145,12 +140,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>shop</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">brands</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -158,12 +153,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>help</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -171,12 +166,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>my company</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>												
 						</div>
@@ -184,12 +179,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>account</h4>
 								<ul>
-									<li><a href="shop.html">login</a></li>
-									<li><a href="shop.html">create an account</a></li>
-									<li><a href="shop.html">create wishlist</a></li>
-									<li><a href="shop.html">my shopping bag</a></li>
-									<li><a href="shop.html">brands</a></li>
-									<li><a href="shop.html">create wishlist</a></li>
+									<li><a th:href="@{/shop}">login</a></li>
+									<li><a th:href="@{/shop}">create an account</a></li>
+									<li><a th:href="@{/shop}">create wishlist</a></li>
+									<li><a th:href="@{/shop}">my shopping bag</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
+									<li><a th:href="@{/shop}">create wishlist</a></li>
 								</ul>	
 							</div>						
 						</div>
@@ -197,12 +192,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>popular</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						</div>
@@ -228,23 +223,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>popular</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">login</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">login</a></li>
 								</ul>	
 							</div>
 							<div class="h_nav">
 								<h4 class="top">man</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						</div>
@@ -252,11 +247,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>style zone</h4>
 								<ul>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">brands</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -275,23 +270,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>shop</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">brands</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
 								</ul>	
 							</div>	
 							<div class="h_nav">
 								<h4 class="top">my company</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>												
 						</div>
@@ -299,12 +294,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>man</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>						
 						</div>
@@ -312,12 +307,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>help</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -325,12 +320,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>account</h4>
 								<ul>
-									<li><a href="shop.html">login</a></li>
-									<li><a href="shop.html">create an account</a></li>
-									<li><a href="shop.html">create wishlist</a></li>
-									<li><a href="shop.html">my shopping bag</a></li>
-									<li><a href="shop.html">brands</a></li>
-									<li><a href="shop.html">create wishlist</a></li>
+									<li><a th:href="@{/login}">login</a></li>
+									<li><a th:href="@{/register}">create an account</a></li>
+									<li><a th:href="@{/shop}">create wishlist</a></li>
+									<li><a th:href="@{/checkout}">my shopping bag</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
+									<li><a th:href="@{/shop}">create wishlist</a></li>
 								</ul>	
 							</div>						
 						</div>
@@ -338,12 +333,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>my company</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						</div>
@@ -351,12 +346,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>popular</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						</div>
@@ -377,12 +372,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>shop</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">brands</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -390,12 +385,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>help</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -403,12 +398,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>my company</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>												
 						</div>
@@ -416,12 +411,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>account</h4>
 								<ul>
-									<li><a href="shop.html">login</a></li>
-									<li><a href="shop.html">create an account</a></li>
-									<li><a href="shop.html">create wishlist</a></li>
-									<li><a href="shop.html">my shopping bag</a></li>
-									<li><a href="shop.html">brands</a></li>
-									<li><a href="shop.html">create wishlist</a></li>
+									<li><a th:href="@{/login}">login</a></li>
+									<li><a th:href="@{/shop}">create an account</a></li>
+									<li><a th:href="@{/shop}">create wishlist</a></li>
+									<li><a th:href="@{/shop}">my shopping bag</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
+									<li><a th:href="@{/shop}">create wishlist</a></li>
 								</ul>	
 							</div>						
 						</div>
@@ -429,12 +424,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>my company</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						</div>
@@ -442,12 +437,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>popular</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						</div>
@@ -468,11 +463,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>style zone</h4>
 								<ul>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">brands</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -480,20 +475,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>popular</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">login</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">login</a></li>
 								</ul>	
 							</div>
 							<div class="h_nav">
 								<h4 class="top">man</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						<div class="col1"></div>
@@ -510,12 +505,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>shop</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">brands</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -523,12 +518,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>help</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -536,12 +531,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>my company</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>												
 						</div>
@@ -549,12 +544,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>account</h4>
 								<ul>
-									<li><a href="shop.html">login</a></li>
-									<li><a href="shop.html">create an account</a></li>
-									<li><a href="shop.html">create wishlist</a></li>
-									<li><a href="shop.html">my shopping bag</a></li>
-									<li><a href="shop.html">brands</a></li>
-									<li><a href="shop.html">create wishlist</a></li>
+									<li><a th:href="@{/shop}">login</a></li>
+									<li><a th:href="@{/shop}">create an account</a></li>
+									<li><a th:href="@{/shop}">create wishlist</a></li>
+									<li><a th:href="@{/shop}">my shopping bag</a></li>
+									<li><a th:href="@{/shop}">brands</a></li>
+									<li><a th:href="@{/shop}">create wishlist</a></li>
 								</ul>	
 							</div>						
 						</div>
@@ -562,12 +557,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>my company</h4>
 								<ul>
-									<li><a href="shop.html">trends</a></li>
-									<li><a href="shop.html">sale</a></li>
-									<li><a href="shop.html">style videos</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">trends</a></li>
+									<li><a th:href="@{/shop}">sale</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						</div>
@@ -575,12 +570,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="h_nav">
 								<h4>popular</h4>
 								<ul>
-									<li><a href="shop.html">new arrivals</a></li>
-									<li><a href="shop.html">men</a></li>
-									<li><a href="shop.html">women</a></li>
-									<li><a href="shop.html">accessories</a></li>
-									<li><a href="shop.html">kids</a></li>
-									<li><a href="shop.html">style videos</a></li>
+									<li><a th:href="@{/shop}">new arrivals</a></li>
+									<li><a th:href="@{/shop}">men</a></li>
+									<li><a th:href="@{/shop}">women</a></li>
+									<li><a th:href="@{/shop}">accessories</a></li>
+									<li><a th:href="@{/shop}">kids</a></li>
+									<li><a th:href="@{/shop}">style videos</a></li>
 								</ul>	
 							</div>
 						</div>
@@ -613,7 +608,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    <h1>Classic</h1>
 						    <h2>White</h2>
 						    <p>Lorem ipsum dolor sit amet</p>
-						    <div class="btn"><a href="shop.html">Shop Now</a></div>
+						    <div class="btn"><a th:href="@{/shop}">Shop Now</a></div>
 						 </div>
 						 <div class="clear"></div>
 					 </div>
@@ -627,7 +622,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    <h1>Classic</h1>
 						    <h2>White</h2>
 						    <p>Lorem ipsum dolor sit amet</p>
-						    <div class="btn"><a href="shop.html">Shop Now</a></div>
+						    <div class="btn"><a th:href="@{/shop}">Shop Now</a></div>
 						 </div>
 						 <div class="clear"></div>
 					 </div>
@@ -641,7 +636,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    <h1>Classic</h1>
 						    <h2>White</h2>
 						    <p>Lorem ipsum dolor sit amet</p>
-						    <div class="btn"><a href="shop.html">Shop Now</a></div>
+						    <div class="btn"><a th:href="@{/shop}">Shop Now</a></div>
 						 </div>
 						 <div class="clear"></div>
 					 </div>
@@ -655,7 +650,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    <h1>Classic</h1>
 						    <h2>White</h2>
 						    <p>Lorem ipsum dolor sit amet</p>
-						    <div class="btn"><a href="shop.html">Shop Now</a></div>
+						    <div class="btn"><a th:href="@{/shop}">Shop Now</a></div>
 						 </div>
 						 <div class="clear"></div>
 					 </div>
@@ -669,7 +664,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    <h1>Classic</h1>
 						    <h2>White</h2>
 						    <p>Lorem ipsum dolor sit amet</p>
-						    <div class="btn"><a href="shop.html">Shop Now</a></div>
+						    <div class="btn"><a th:href="@{/shop}">Shop Now</a></div>
 						 </div>
 						 <div class="clear"></div>
 					 </div>
@@ -721,15 +716,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  </div>
 					  <div class="clear"></div>			
 				   </div>
-				  <div class="content-bottom">
-				   <div class="box1">
-				    <div class="col_1_of_3 span_1_of_3"><a href="single.html">
-				     <div class="view view-fifth">
-				  	  <div class="top_box">
+				  <div class="content-bottom" >
+				   <div class="box1" >
+				    <div class="col_1_of_3 span_1_of_3"><a th:href="@{/single}">
+				    
+				     <div class="view view-fifth" >
+				  	  <div class="top_box" >
 					  	<h3 class="m_1">Lorem ipsum dolor sit amet</h3>
 					  	<p class="m_2">Lorem ipsum</p>
 				         <div class="grid_img">
-						   <div class="css3"><img src="images/pic.jpg" alt=""/></div>
+						   <div class="css3"><img src="images/pic2.jpg" alt=""/></div>
 					          <div class="mask">
 	                       		<div class="info">Quick View</div>
 			                  </div>
@@ -765,13 +761,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					     </ul>
 			    	    <div class="clear"></div>
 			    	</a></div>
-				    <div class="col_1_of_3 span_1_of_3"><a href="single.html">
-				     <div class="view view-fifth">
-				  	  <div class="top_box">
-					  	<h3 class="m_1">Lorem ipsum dolor sit amet</h3>
+				  
+				    <div class="col_1_of_3 span_1_of_3"><a th:href="@{/single}">
+				     <div class="view view-fifth" >
+				  	  <div class="top_box" >
+					  		<h3 class="m_1">Lorem ipsum dolor sit amet</h3>
 					  	<p class="m_2">Lorem ipsum</p>
-					    <div class="grid_img">
-						   <div class="css3"><img src="images/pic1.jpg" alt=""/></div>
+				         <div class="grid_img">
+						   <div class="css3"><img src="images/pic2.jpg" alt=""/></div>
 					          <div class="mask">
 	                       		<div class="info">Quick View</div>
 			                  </div>
@@ -807,7 +804,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					     </ul>
 			    	    <div class="clear"></div>
 			    	</a></div>
-				    <div class="col_1_of_3 span_1_of_3"><a href="single.html">
+				    <div class="col_1_of_3 span_1_of_3"><a th:href="@{/single}">
 				     <div class="view view-fifth">
 				  	  <div class="top_box">
 					  	<h3 class="m_1">Lorem ipsum dolor sit amet</h3>
@@ -852,7 +849,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				  <div class="clear"></div>
 			  </div>
 			  <div class="box1">
-				  <div class="col_1_of_3 span_1_of_3"><a href="single.html">
+				  <div class="col_1_of_3 span_1_of_3"><a th:href="@{/single}">
 				     <div class="view view-fifth">
 				  	  <div class="top_box">
 					  	<h3 class="m_1">Lorem ipsum dolor sit amet</h3>
@@ -894,7 +891,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					     </ul>
 			    	    <div class="clear"></div>
 			    	</a></div>
-				    <div class="col_1_of_3 span_1_of_3"><a href="single.html">
+				    <div class="col_1_of_3 span_1_of_3"><a th:href="@{/single}">
 				     <div class="view view-fifth">
 				  	  <div class="top_box">
 					  	<h3 class="m_1">Lorem ipsum dolor sit amet</h3>
@@ -936,7 +933,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					     </ul>
 			    	    <div class="clear"></div>
 			    	</a></div>
-				   <div class="col_1_of_3 span_1_of_3"><a href="single.html">
+				   <div class="col_1_of_3 span_1_of_3"><a th:href="@{/single}">
 				     <div class="view view-fifth">
 				  	  <div class="top_box">
 					  	<h3 class="m_1">Lorem ipsum dolor sit amet</h3>
@@ -1044,150 +1041,150 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h3 class="m_9">Shop</h3>
 					<ul class="sub_list">
 						<h4 class="m_10">Men</h4>
-					    <li><a href="shop.html">Men's Shoes</a></li>
-			            <li><a href="shop.html">Men's Clothing</a></li>
-			            <li><a href="shop.html">Men's Accessories</a></li>
+					    <li><a th:href="@{/shop}">Men's Shoes</a></li>
+			            <li><a th:href="@{/shop}">Men's Clothing</a></li>
+			            <li><a th:href="@{/shop}">Men's Accessories</a></li>
 			        </ul>
 			             <ul class="sub_list">
 				            <h4 class="m_10">Women</h4>
-				            <li><a href="shop.html">Women's Shoes</a></li>
-				            <li><a href="shop.html">Women's Clothing</a></li>
-				            <li><a href="shop.html">Women's Accessories</a></li>
+				            <li><a th:href="@{/shop}">Women's Shoes</a></li>
+				            <li><a th:href="@{/shop}">Women's Clothing</a></li>
+				            <li><a th:href="@{/shop}">Women's Accessories</a></li>
 				         </ul>
 				         <ul class="sub_list">
 				            <h4 class="m_10">Kids</h4>
-				            <li><a href="shop.html">Kids Shoes</a></li>
-				            <li><a href="shop.html">Kids Clothing</a></li>
-				            <li><a href="shop.html">Kids Accessories</a></li>
+				            <li><a th:href="@{/shop}">Kids Shoes</a></li>
+				            <li><a th:href="@{/shop}">Kids Clothing</a></li>
+				            <li><a th:href="@{/shop}">Kids Accessories</a></li>
 				         </ul>
 				        <ul class="sub_list">
 				            <h4 class="m_10">style</h4>
-				            <li><a href="shop.html">Porsche Design Sport</a></li>
-				            <li><a href="shop.html">Porsche Design Shoes</a></li>
-				            <li><a href="shop.html">Porsche Design Clothing</a></li>
+				            <li><a th:href="@{/shop}">Porsche Design Sport</a></li>
+				            <li><a th:href="@{/shop}">Porsche Design Shoes</a></li>
+				            <li><a th:href="@{/shop}">Porsche Design Clothing</a></li>
 				        </ul>
 				        <ul class="sub_list">
 				            <h4 class="m_10">Adidas Neo Label</h4>
-				            <li><a href="shop.html">Adidas NEO Shoes</a></li>
-				            <li><a href="shop.html">Adidas NEO Clothing</a></li>
+				            <li><a th:href="@{/shop}">Adidas NEO Shoes</a></li>
+				            <li><a th:href="@{/shop}">Adidas NEO Clothing</a></li>
 				        </ul>
 				        <ul class="sub_list1">
 				            <h4 class="m_10">Customise</h4>
-				            <li><a href="shop.html">mi adidas</a></li>
-				            <li><a href="shop.html">mi team</a></li>
-				            <li><a href="shop.html">new arrivals</a></li>
+				            <li><a th:href="@{/shop}">mi adidas</a></li>
+				            <li><a th:href="@{/shop}">mi team</a></li>
+				            <li><a th:href="@{/shop}">new arrivals</a></li>
 				        </ul>
 				</div>
 				<div class="col_1_of_5 span_1_of_5">
 					<h3 class="m_9">Sports</h3>
 					<ul class="list1">
-					    <li><a href="shop.html">Basketball</a></li>
-			            <li><a href="shop.html">Football</a></li>
-			            <li><a href="shop.html">Football Boots</a></li>
-			            <li><a href="shop.html">Predator</a></li>
-			            <li><a href="shop.html">F50</a></li>
-			            <li><a href="shop.html">Football Clothing</a></li>
-			            <li><a href="shop.html">Golf</a></li>
-			            <li><a href="shop.html">Golf Shoes</a></li>
-			            <li><a href="shop.html">Golf Clothing</a></li>
-			            <li><a href="shop.html">Outdoor</a></li>
-			            <li><a href="shop.html">Outdoor Shoes</a></li>
-			            <li><a href="shop.html">Outdoor Clothing</a></li>
-			            <li><a href="shop.html">Rugby</a></li>
-			            <li><a href="shop.html">Running</a></li>
-			            <li><a href="shop.html">Running Shoes</a></li>
-			            <li><a href="shop.html">Boost</a></li>
-			            <li><a href="shop.html">Supernova</a></li>
-			            <li><a href="shop.html">Running Clothing</a></li>
-			            <li><a href="shop.html">Swimming</a></li>
-			            <li><a href="shop.html">Tennis</a></li>
-			            <li><a href="shop.html">Tennis Shoes</a></li>
-			            <li><a href="shop.html">Tennis Clothing</a></li>
-			            <li><a href="shop.html">Training</a></li>
-			            <li><a href="shop.html">Training Shoes</a></li>
-			            <li><a href="shop.html">Training Clothing</a></li>
-			            <li><a href="shop.html">Training Accessories</a></li>
-			            <li><a href="shop.html">miCoach</a></li>
-			            <li><a href="shop.html">All Sports</a></li>
+					    <li><a th:href="@{/shop}">Basketball</a></li>
+			            <li><a th:href="@{/shop}">Football</a></li>
+			            <li><a th:href="@{/shop}">Football Boots</a></li>
+			            <li><a th:href="@{/shop}">Predator</a></li>
+			            <li><a th:href="@{/shop}">F50</a></li>
+			            <li><a th:href="@{/shop}">Football Clothing</a></li>
+			            <li><a th:href="@{/shop}">Golf</a></li>
+			            <li><a th:href="@{/shop}">Golf Shoes</a></li>
+			            <li><a th:href="@{/shop}">Golf Clothing</a></li>
+			            <li><a th:href="@{/shop}">Outdoor</a></li>
+			            <li><a th:href="@{/shop}">Outdoor Shoes</a></li>
+			            <li><a th:href="@{/shop}">Outdoor Clothing</a></li>
+			            <li><a th:href="@{/shop}">Rugby</a></li>
+			            <li><a th:href="@{/shop}">Running</a></li>
+			            <li><a th:href="@{/shop}">Running Shoes</a></li>
+			            <li><a th:href="@{/shop}">Boost</a></li>
+			            <li><a th:href="@{/shop}">Supernova</a></li>
+			            <li><a th:href="@{/shop}">Running Clothing</a></li>
+			            <li><a th:href="@{/shop}">Swimming</a></li>
+			            <li><a th:href="@{/shop}">Tennis</a></li>
+			            <li><a th:href="@{/shop}">Tennis Shoes</a></li>
+			            <li><a th:href="@{/shop}">Tennis Clothing</a></li>
+			            <li><a th:href="@{/shop}">Training</a></li>
+			            <li><a th:href="@{/shop}">Training Shoes</a></li>
+			            <li><a th:href="@{/shop}">Training Clothing</a></li>
+			            <li><a th:href="@{/shop}">Training Accessories</a></li>
+			            <li><a th:href="@{/shop}">miCoach</a></li>
+			            <li><a th:href="@{/shop}">All Sports</a></li>
 			         </ul>
 				</div>
 				<div class="col_1_of_5 span_1_of_5">
 					<h3 class="m_9">Originals</h3>
 					<ul class="list1">
-					    <li><a href="shop.html">Originals Shoes</a></li>
-			            <li><a href="shop.html">Gazelle</a></li>
-			            <li><a href="shop.html">Samba</a></li>
-			            <li><a href="shop.html">LA Trainer</a></li>
-			            <li><a href="shop.html">Superstar</a></li>
-			            <li><a href="shop.html">SL</a></li>
-			            <li><a href="shop.html">ZX</a></li>
-			            <li><a href="shop.html">Campus</a></li>
-			            <li><a href="shop.html">Spezial</a></li>
-			            <li><a href="shop.html">Dragon</a></li>
-			            <li><a href="shop.html">Originals Clothing</a></li>
-			            <li><a href="shop.html">Firebird</a></li>
-			            <li><a href="shop.html">Originals Accessories</a></li>
-			            <li><a href="shop.html">Men's Originals</a></li>
-			            <li><a href="shop.html">Women's Originals</a></li>
-			            <li><a href="shop.html">Kid's Originals</a></li>
-			            <li><a href="shop.html">All Originals</a></li>
+					    <li><a th:href="@{/shop}">Originals Shoes</a></li>
+			            <li><a th:href="@{/shop}">Gazelle</a></li>
+			            <li><a th:href="@{/shop}">Samba</a></li>
+			            <li><a th:href="@{/shop}">LA Trainer</a></li>
+			            <li><a th:href="@{/shop}">Superstar</a></li>
+			            <li><a th:href="@{/shop}">SL</a></li>
+			            <li><a th:href="@{/shop}">ZX</a></li>
+			            <li><a th:href="@{/shop}">Campus</a></li>
+			            <li><a th:href="@{/shop}">Spezial</a></li>
+			            <li><a th:href="@{/shop}">Dragon</a></li>
+			            <li><a th:href="@{/shop}">Originals Clothing</a></li>
+			            <li><a th:href="@{/shop}">Firebird</a></li>
+			            <li><a th:href="@{/shop}">Originals Accessories</a></li>
+			            <li><a th:href="@{/shop}">Men's Originals</a></li>
+			            <li><a th:href="@{/shop}">Women's Originals</a></li>
+			            <li><a th:href="@{/shop}">Kid's Originals</a></li>
+			            <li><a th:href="@{/shop}">All Originals</a></li>
 		            </ul>
 				</div>
 				<div class="col_1_of_5 span_1_of_5">
 					<h3 class="m_9">Product Types</h3>
 					<ul class="list1">
-					    <li><a href="shop.html">Shirts</a></li>
-					    <li><a href="shop.html">Pants & Tights</a></li>
-					    <li><a href="shop.html">Shirts</a></li>
-					    <li><a href="shop.html">Jerseys</a></li>
-					    <li><a href="shop.html">Hoodies & Track Tops</a></li>
-					    <li><a href="shop.html">Bags</a></li>
-					    <li><a href="shop.html">Jackets</a></li>
-					    <li><a href="shop.html">Hi Tops</a></li>
-					    <li><a href="shop.html">SweatShirts</a></li>
-					    <li><a href="shop.html">Socks</a></li>
-					    <li><a href="shop.html">Swimwear</a></li>
-					    <li><a href="shop.html">Tracksuits</a></li>
-					    <li><a href="shop.html">Hats</a></li>
-					    <li><a href="shop.html">Football Boots</a></li>
-					    <li><a href="shop.html">Other Accessories</a></li>
-					    <li><a href="shop.html">Sandals & Flip Flops</a></li>
-					    <li><a href="shop.html">Skirts & Dresseses</a></li>
-					    <li><a href="shop.html">Balls</a></li>
-					    <li><a href="shop.html">Watches</a></li>
-					    <li><a href="shop.html">Fitness Equipment</a></li>
-					    <li><a href="shop.html">Eyewear</a></li>
-					    <li><a href="shop.html">Gloves</a></li>
-					    <li><a href="shop.html">Sports Bras</a></li>
-					    <li><a href="shop.html">Scarves</a></li>
-					    <li><a href="shop.html">Shinguards</a></li>
-					    <li><a href="shop.html">Underwear</a></li>
+					    <li><a th:href="@{/shop}">Shirts</a></li>
+					    <li><a th:href="@{/shop}">Pants & Tights</a></li>
+					    <li><a th:href="@{/shop}">Shirts</a></li>
+					    <li><a th:href="@{/shop}">Jerseys</a></li>
+					    <li><a th:href="@{/shop}">Hoodies & Track Tops</a></li>
+					    <li><a th:href="@{/shop}">Bags</a></li>
+					    <li><a th:href="@{/shop}">Jackets</a></li>
+					    <li><a th:href="@{/shop}">Hi Tops</a></li>
+					    <li><a th:href="@{/shop}">SweatShirts</a></li>
+					    <li><a th:href="@{/shop}">Socks</a></li>
+					    <li><a th:href="@{/shop}">Swimwear</a></li>
+					    <li><a th:href="@{/shop}">Tracksuits</a></li>
+					    <li><a th:href="@{/shop}">Hats</a></li>
+					    <li><a th:href="@{/shop}">Football Boots</a></li>
+					    <li><a th:href="@{/shop}">Other Accessories</a></li>
+					    <li><a th:href="@{/shop}">Sandals & Flip Flops</a></li>
+					    <li><a th:href="@{/shop}">Skirts & Dresseses</a></li>
+					    <li><a th:href="@{/shop}">Balls</a></li>
+					    <li><a th:href="@{/shop}">Watches</a></li>
+					    <li><a th:href="@{/shop}">Fitness Equipment</a></li>
+					    <li><a th:href="@{/shop}">Eyewear</a></li>
+					    <li><a th:href="@{/shop}">Gloves</a></li>
+					    <li><a th:href="@{/shop}">Sports Bras</a></li>
+					    <li><a th:href="@{/shop}">Scarves</a></li>
+					    <li><a th:href="@{/shop}">Shinguards</a></li>
+					    <li><a th:href="@{/shop}">Underwear</a></li>
 		            </ul>
 				</div>
 				<div class="col_1_of_5 span_1_of_5">
 					<h3 class="m_9">Support</h3>
 					<ul class="list1">
-					   <li><a href="shop.html">Store finder</a></li>
-					   <li><a href="shop.html">Customer Service</a></li>
-					   <li><a href="shop.html">FAQ</a></li>
-					   <li><a href="shop.html">Online Shop Contact Us</a></li>
-					   <li><a href="shop.html">about adidas Products</a></li>
-					   <li><a href="shop.html">Size Charts </a></li>
-					   <li><a href="shop.html">Ordering </a></li>
-					   <li><a href="shop.html">Payment </a></li>
-					   <li><a href="shop.html">Shipping </a></li>
-					   <li><a href="shop.html">Returning</a></li>
-					   <li><a href="shop.html">Using out Site</a></li>
-					   <li><a href="shop.html">Delivery Terms</a></li>
-					   <li><a href="shop.html">Site Map</a></li>
-					   <li><a href="shop.html">Gift Card</a></li>
+					   <li><a th:href="@{/shop}">Store finder</a></li>
+					   <li><a th:href="@{/shop}">Customer Service</a></li>
+					   <li><a th:href="@{/shop}">FAQ</a></li>
+					   <li><a th:href="@{/shop}">Online Shop Contact Us</a></li>
+					   <li><a th:href="@{/shop}">about adidas Products</a></li>
+					   <li><a th:href="@{/shop}">Size Charts </a></li>
+					   <li><a th:href="@{/shop}">Ordering </a></li>
+					   <li><a th:href="@{/shop}">Payment </a></li>
+					   <li><a th:href="@{/shop}">Shipping </a></li>
+					   <li><a th:href="@{/shop}">Returning</a></li>
+					   <li><a th:href="@{/shop}">Using out Site</a></li>
+					   <li><a th:href="@{/shop}">Delivery Terms</a></li>
+					   <li><a th:href="@{/shop}">Site Map</a></li>
+					   <li><a th:href="@{/shop}">Gift Card</a></li>
 					  
 		            </ul>
 		            <ul class="sub_list2">
 		               <h4 class="m_10">Company Info</h4>
-			           <li><a href="shop.html">About Us</a></li>
-			           <li><a href="shop.html">Careers</a></li>
-			           <li><a href="shop.html">Press</a></li>
+			           <li><a th:href="@{/shop}">About Us</a></li>
+			           <li><a th:href="@{/shop}">Careers</a></li>
+			           <li><a th:href="@{/shop}">Press</a></li>
 			        </ul>
 				</div>
 				<div class="clear"></div>

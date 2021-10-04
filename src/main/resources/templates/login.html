@@ -1,11 +1,8 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
-<html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
 <title>Free Adidas Website Template | Login :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -616,29 +613,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				  <div class="login-title">
 	           		<h4 class="title">Registered Customers</h4>
 					 <div class="comments-area">
-						<form>
+						   <form th:action="@{/login}" method="post">
 							<p>
-								<label>Name</label>
+								<label>email</label>
 								<span>*</span>
-								<input type="text" value="">
+								<input type="text" name="email" id="email" placeholder="Your Email" class="form-control form-control-lg">
 							</p>
-							<p>
-								<label>Password</label>
-								<span>*</span>
-								<input type="password" value="">
+
+
+								<div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control form-control-lg" placeholder="Password" name="password" id="password">
+                </div>
+                 <div th:if="${param.error}" class="alert alert-error text-danger">
+                    Invalid username or password.
+                </div>
 							</p>
 							 <p id="login-form-remember">
-								<label><a href="#">Forget Your Password ? </a></label>
+								<label>  <a href="" th:href="@{/forgotpassword}">Forgot password ?</a></label>
 							 </p>
 							 <p>
-								<input type="submit" value="Login">
+								 <input type="submit" value="Login" class="btn btn-primary btn-block">
 							</p>
 						</form>
+						<br>
+					<h3>OR</h3>
+            <a href="/oauth2/authorization/google" class="btn btn-primary">Sign-In with google </a>
 					</div>
 			      </div>
 				</div>
 				<div class="clear"></div>
 			</div>
+		 
 		</div>
         <div class="footer">
        	  <div class="footer-top">

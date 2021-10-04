@@ -17,10 +17,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.gastore.dto.ProductDTO;
+import com.gastore.global.GlobalData;
 import com.gastore.model.Category;
 import com.gastore.model.Product;
 import com.gastore.service.CategoryService;
-import com.gastore.service.ProductService;
+import com.gastore.service.ProductService;;
 
 @Controller
 public class HomeController {
@@ -29,6 +30,13 @@ public class HomeController {
 	ProductService productService;
 	@Autowired
 	CategoryService categoryService;
+
+	
+
+	@GetMapping("/single")
+	public String getSignle() {
+		return "single";
+	}
 
 	@GetMapping("/admin/categories")
 	public String getCat(Model model) {
@@ -105,6 +113,52 @@ public class HomeController {
 
 		return "redirect:/admin/products";
 
+	}
+
+	@GetMapping({ "/", "/home" })
+	public String home(Model model) {
+		model.addAttribute("cartCount", GlobalData.cart.size());
+
+		return "index";
+	}
+
+	@GetMapping("/shop")
+	public String shop(Model model) {
+		model.addAttribute("categories", categoryService.getAllCategory());
+		model.addAttribute("products", productService.getAllProduct());
+		model.addAttribute("cartCount", GlobalData.cart.size());
+
+		return "shop";
+	}
+
+	@GetMapping("/shop/category/{id}")
+	public String shopByCategory(Model model, @PathVariable Long id) {
+		model.addAttribute("categories", categoryService.getAllCategory());
+		model.addAttribute("cartCount", GlobalData.cart.size());
+
+		model.addAttribute("products", productService.getAllProductByCategoryid(id));
+
+		return "shop";
+	}
+
+	@GetMapping("/shop/viewproduct/{id}")
+	public String viewProduct(Model model, @PathVariable Long id) {
+		model.addAttribute("product", productService.getProductById(id).get());
+		model.addAttribute("cartCount", GlobalData.cart.size());
+
+		return "viewProduct";
+	}
+
+	@GetMapping("/cart/removeItem/{index}")
+	public String cartIteamRemove(@PathVariable int index) {
+		GlobalData.cart.remove(index);
+		return "redirect:/cart";
+	}
+
+	@GetMapping("/checkout")
+	public String checkout(Model model) {
+		model.addAttribute("total", GlobalData.cart.stream().mapToDouble(Product::getPrice).sum());
+		return "checkout";
 	}
 
 }
